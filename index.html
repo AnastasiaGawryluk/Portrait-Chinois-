@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait chinois de Anastasia Si j'étais, je serais...</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="icon" type="Images/png" href="Images/Icone.png" />
+
+</head>
+
+<body>
+
+    <!--Revenir au top-->
+    <div id="top"></div>
+
+    <!--La barre de navigation-->
+    <nav class="nav">
+        <ul>
+            <li><a href="#top">Accueil</a></li>
+            <li><a href="#section1" alt="couleur">Couleur</a></li>
+            <li><a href="#section2" alt="animal">Animal</a></li>
+            <li><a href="#section3" alt="activité">Activité</a></li>
+            <li><a href="#section4" alt="artiste">Artiste</a></li>
+            <li><a href="#section5" alt="instrument">Instrument</a></li>
+            <li><a href="#section6" alt="ville">Ville</a></li>
+            <li><a href="#section7" alt="animé">Animé</a></li>
+            <li><a href="#formulaire" alt="formulaire">Formulaire</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Présentation -->
+        <div class="titre1">
+            <h1>PORTRAIT CHINOIS D'ANASTASIA</h1>
+            <p>Bonjour, je vous invite à découvrir mon portrait chinois.
+                <br> Ce projet s'inscrit dans le cadre de mes études en BUT MMI à Champs-sur-Marne.
+                <br>Je vous souhaite une agréable visite.
+            </p>
+        </div>
+
+
+        <!-- Bouton pour aller à la présentation -->
+        <div class="découvrir">
+            <a href="#liste-analogies" class="continue" id="bouton"> Découvrir </a>
+        </div>
+    </header>
+
+    <!-- les "si j'étais [...], je serais..." -->
+    <main>
+        <div id="liste-analogies"></div>
+    </main>
+
+
+    <!--Le formulaire-->
+    <section>
+        <div id="formulaire">
+            <div class="formulairebox">
+
+                <form>
+                    <h2 class="titreFormulaire">Et d'après toi je serais quoi ?</h2>
+                    <p class="legende">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+
+                    <label for="analogie">Si j'étais (max 30 caractères) </label>
+                    <input id="analogie" type="text" placeholder="(ex=une boisson)*" maxlength="30" required>
+                    <br>
+
+                    <label for="response">je serais (max 30 caractères) </label>
+                    <input id="valeur" type="text" placeholder="(ex: Le latte)*" maxlength="30" required>
+                    <br>
+
+                    <label for="detail">car (max 100 caractères)</label>
+                    <input id="detail" type="text" placeholder="(ex: C'est ma boisson préférée)*" maxlength="100"
+                        required>
+                    <br>
+
+                    <label for="image">Votre image </label>
+                    <input id="image" type="text" placeholder=" URL de votre image*" required>
+                    <br>
+
+                    <label for="mail">Votre mail </label>
+                    <input id="mail" type="text" placeholder="exemple@gmail.com*" required>
+                    <br>
+                    <!-- le required sert à forcer la réponse -->
+
+                    <input class="send" type="button" value="Envoyer" id="send">
+                    <p id="confirmation"></p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="nouvelleanalogie">
+    </div>
+
+    <footer>
+        <button id="OuvrirMentionLégales">Mentions légales</button>
+        <div class="mention-légales" id="mention">
+            <div class="modal-inner">
+                <p>&copy; MENTIONS LÉGALES</p>
+                <p>Un portrait chinois écrit et développé par Anastasia Gawryluk</p>
+                <p>Images : Anastasia Gawryluk et Mer Mendoza </p>
+                <p>Toutes les images utilisées sur cette page sont libres de droit pour usage personnel, et ne feront
+                    jamais l'objet d'une commercialisation.</p>
+                <p>Hébergeur: Université Gustave Eiffel - 2 rue Albert Einstein, 77420 Champs-sur-Marne,
+                    France</p>
+                <p>Vos données ne seront jamais transmises à des tiers et ne feront jamais l'objet d'une
+                    commercialisation. Elles seront envoyées à une base de données ; pour toute demande
+                    de
+                    suppression ou toute question relative à la collecte ou au traitement de vos données
+                    personnelles par le site web, vous pouvez contacter le responsable de la protection
+                    des
+                    données du projet : philippe.gambette@univ-eiffel.fr. Elles seront supprimées durant
+                    l'été 2024.</p>
+                <button id="FermerMentionLégales">Fermer</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</html>

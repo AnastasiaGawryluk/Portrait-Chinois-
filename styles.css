@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+section {
+  height: 100vh;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/*NAVIGATION*/
+/* Positionnement de la barre au centre*/
+nav ul {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 1rem;
+}
+
+/*couleur du texte sans survol des liens */
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ff69b4;
+}
+
+/*couleur du texte au survol des liens */
+.nav ul li a:hover {
+  color: #ea3891;
+}
+
+
+/*PAGE D'ACCEUIL*/
+/*mise en forme pour que les éléments soient au centre */
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #ff69b4;
+  font-family: 'Noto Serif', serif;
+}
+
+
+/*mise en forme pour que le texte soit au centre */
+.titre1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Kalnia', serif;
+}
+
+/*BOUTON DECOUVRIR*/
+#bouton {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease;
+  margin-top: 100px;
+  color: #ff69b4;
+}
+
+/*lorsqu'on survolle la couleur change et s'agrandit*/
+#bouton:hover {
+  font-size: 1.5rem;
+  color: #ea3891;
+  ;
+}
+
+
+/*ANALOGIES*/
+.url {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  width: 300px;
+  box-shadow: 0px 5px 20px rgba(255, 105, 180, 1); overflow: hidden; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.url:hover {
+  box-shadow: 0px 10px 30px rgba(255, 105, 180, 1); 
+  transform: scale(1.1);
+}
+
+
+
+.si-jetais {
+  text-align: left;
+  position: relative;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  color: #ff69b4;
+  font-family: 'Noto Serif', serif;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+.text {
+  position: relative;
+  margin-top: 0;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  width: 500px;
+  margin-left: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*FORMULAIRE*/
+/* Style du conteneur du formulaire */
+.formulairebox {
+  max-width: 400px;
+  margin: 50px auto 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 105, 180, 0.5);
+  ;
+}
+
+/* Style des titres du formulaire */
+.titreFormulaire {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: 'Kalnia', serif;
+}
+
+.legende {
+  font-size: 11px;
+  color: #ea3891;
+  font-family: 'Kalnia', serif;
+
+}
+
+/* Style des labels */
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #ffffff;
+  font-family: 'Kalnia', serif;
+}
+
+/* Style des champs de saisie */
+input[type="text"] {
+  width: calc(100% - 16px);
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Kalnia', serif;
+}
+
+
+/* Style du bouton d'envoi */
+.send {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: white;
+  border: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.5s ease;
+  font-family: 'Kalnia', serif;
+}
+
+/*lorsqu'on survolle la couleur change et s'agrandit*/
+.send:hover {
+  font-size: 1.1rem;
+  color: #ff69b4;
+
+}
+
+#confirmation{
+color: #ea3891;
+font-size: 12px;
+font-family: 'Kalnia', serif;
+}
+
+
+
+/*POPUP*/
+/*mise en forme du bouton mentions légales*/
+button {
+  background-color: white;
+  border: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  width: 150px;
+  height: 50px;
+  transition: 0.5s ease;
+  font-family: 'Kalnia', serif;
+}
+
+
+/*lorsqu'on survolle la couleur change et s'agrandit*/
+button:hover {
+  font-size: 1.0rem;
+  color: #ff69b4;
+}
+
+
+/*mise en forme de l'intérieur du texte du popup*/
+.mention-légales {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.5);
+  font-family: 'Kalnia', serif;
+}
+
+.mention-légales.open {
+  display: flex;
+}
+
+
+/*BARRE DE FIN DE PAGE*/
+footer {
+  background-color: rgba(255, 105, 180, 0.5);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
